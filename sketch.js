@@ -4,8 +4,10 @@ let mySound;
 
 function preload() {
   soundFormats("mp3", "ogg");
-  mySound = loadSound("assets/this-dot-daniel-shiffman-coding-train");
+  mySound = loadSound("assets/vexento-home.mp3");
 }
+
+let img;
 
 function setup() {
   createCanvas(1825, 1045);
@@ -15,7 +17,8 @@ function setup() {
   strokeWeight(4);
   background(0);
   mySound.play();
-  console.log("🎆🎆🟠 🟠🎆🎆🎆 🎆🎆🟠 🟠🎆 🟠 🎆🎆🟠");
+  console.log("🎆🎆🟠 🟠🎆🎆🎆 🎆🎆🟠 🟠🎆 🟠 🎆🎆🟠"); // https://en.wikipedia.org/wiki/Morse_code
+  img = loadImage("assets/ubuntu.png"); // Load the image
 }
 
 function draw() {
@@ -37,4 +40,6 @@ function draw() {
   textSize(256);
   text("ubuntu", 500, 600);
   textFont("Ubuntu");
+
+  image(img, 1320, 325);
 }

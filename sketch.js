@@ -1,12 +1,5 @@
 var fireworks = [];
 var gravity;
-let mySound;
-
-function preload() {
-  soundFormats("mp3", "ogg");
-  mySound = loadSound("assets/vexento-home.mp3");
-}
-
 let img;
 
 function setup() {
@@ -16,9 +9,8 @@ function setup() {
   stroke(255);
   strokeWeight(4);
   background(0);
-  mySound.play();
   console.log("🎆🎆🟠 🟠🎆🎆🎆 🎆🎆🟠 🟠🎆 🟠 🎆🎆🟠"); // https://en.wikipedia.org/wiki/Morse_code
-  img = loadImage("assets/ubuntu.png"); // Load the image
+  img = loadImage("assets/ubuntu.png"); // Load ubuntu image
 }
 
 function draw() {

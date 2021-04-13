@@ -28,6 +28,6 @@ function draw() {
     }
   }
   textSize(256);
-  text("Mon Pro Web", 500, 600);
+  text("Mon Pro Web", 200, 600);
   textFont("Ubuntu");
 }

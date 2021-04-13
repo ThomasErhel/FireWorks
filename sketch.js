@@ -1,6 +1,5 @@
 var fireworks = [];
 var gravity;
-let img;
 
 function setup() {
   createCanvas(1825, 1045);
@@ -10,12 +9,11 @@ function setup() {
   strokeWeight(4);
   background(0);
   console.log("🎆🎆🟠 🟠🎆🎆🎆 🎆🎆🟠 🟠🎆 🟠 🎆🎆🟠"); // https://en.wikipedia.org/wiki/Morse_code
-  img = loadImage("assets/ubuntu.png"); // Load ubuntu image
 }
 
 function draw() {
   colorMode(RGB);
-  background(221, 72, 20);
+  background(236, 111, 24);
 
   if (random(1) < 0.03) {
     fireworks.push(new Firework());
@@ -30,8 +28,6 @@ function draw() {
     }
   }
   textSize(256);
-  text("ubuntu", 500, 600);
+  text("Mon Pro Web", 500, 600);
   textFont("Ubuntu");
-
-  image(img, 1320, 325);
 }
